@@ -1,0 +1,864 @@
+@import "base";
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: $white-color;
+
+    .nav{
+                
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+
+        .logo{
+
+            img{
+                object-fit: cover;
+            }
+        }
+        .hamburgur{
+            padding: 1rem;
+            cursor: pointer;
+            
+            &__line{    
+                width: 20px;
+                height: 2px;
+                background-color: #333;
+                margin-bottom: 3px;
+                border-radius: 5px;
+                transition: all 0.4s ease-out;
+            }
+        }
+
+
+        .menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            height: 100vh;
+            background-color: $white-color;
+            color: $primary-color;
+            border-top: 2px solid $border-color;
+            padding: .5rem 1rem;
+            text-align: center;
+            display: none;
+
+            &.active{
+                display: flex;
+            }
+
+            li{
+                border-bottom: 1px solid #eee;
+                padding: 1rem 0;
+
+                a{
+                    color: $primary-color;
+                }
+            }
+        }
+
+        
+    }
+
+
+}
+
+.hero-1{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+    &__left{
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__right{
+        background-color: $bg-primary-color;
+        padding: 2rem 3rem;
+
+        h1{
+            font-size: 2rem;
+            font-weight: 700;
+            color: $white-color;
+            text-align: center;
+        }
+        p{
+            color: $white-color;
+            text-align: justify;
+            margin: 2rem 0;
+        }
+        .desktop{
+            display: none;
+        }
+        .btn{
+            margin-top: 3rem;
+            display: block;
+            
+
+            a{
+                color: $primary-color;
+                font-weight: bold;
+                display: block;
+            }
+        }
+    }
+
+}
+
+
+.social-desktop{
+
+    display: none;
+   
+}
+
+
+.snapp-apk{
+background-color: $body-color;
+
+    .container{
+        padding: 4rem 2rem;
+
+        .title{
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.8rem;
+        }
+
+        .snapp-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            color: $primary-color;
+
+
+            &__item{
+                width: 30%;
+                margin-bottom: .5rem;
+                margin: .5rem 0;
+                background-color: $white-color;
+                border-radius: $border-radius;
+                border: 1px solid #eee;
+                
+                a{
+                    padding: 1rem 1rem;
+                    display: block;
+                    color: $primary-color;
+
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                    }
+                    h3{
+                        font-size: 1.1rem;
+                    }
+                }
+
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+.order-food{
+
+    &__slider{
+        padding: 2rem 2rem;
+        margin: 1rem 0;
+        width: 100%;
+        height: 200px;
+        border-radius: $border-radius;
+        overflow: hidden;
+
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__super-apk{
+
+
+        .super-apk__right{
+            width: 100%;
+            height: 300px;
+
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .super-apk__left{
+            padding: 1rem 2rem;
+
+            h2{
+                margin: 1.5rem 0;
+                font-weight: 700;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+
+    }
+
+    &__quick-way{
+        margin: 4rem 0;
+        padding: 1rem 2rem;
+
+        ul{
+            
+        display: flex;
+        flex-direction: column;
+
+            li{
+
+
+                .image{
+                    background-color: $body-color;
+                    text-align: center;
+                    border-radius: $border-radius;
+                }
+                .detail{
+                    padding: 1rem 1rem;
+
+                    h3{
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        margin: 1rem 0;
+                    }
+                    p{
+                        font-size: 1.3rem;
+                        text-align: justify;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.sign-driver{
+    background-color: $body-color;
+    padding: 3rem 2rem;
+
+    h2{
+        text-align: center;
+        font-size: 2.1rem;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-top: 3rem;
+    }
+
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a.btn{
+            display: block;
+            margin: 4rem 0;
+            width: 50%;
+        }
+    }
+
+    video{
+        width: 100%;
+        height: auto;
+    }
+    &__detail{
+        margin: 5rem 0;
+
+        ul{
+
+            li{
+                background-color: $white-color;
+                border-radius: $border-radius;
+                padding: 1.5rem 1rem;
+                margin-bottom: 2rem;
+
+                .icon{
+                    text-align: center;
+
+                    img{
+                        width: 180px;
+                        height: 100px;
+                    }
+                }
+                .detail{
+
+                    h2{
+                        font-size: 1.7rem;
+                    }
+                    p{
+                        text-align: justify;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+footer{
+
+    .footer-menu{
+        padding: 1.5rem 1rem;
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+            li{
+                margin: 2rem 0 .7rem .2rem;
+                border-bottom: 1px solid #eee;
+
+                a{
+                    display: block;
+                    padding: 0 1rem;
+                    color: $primary-color
+                }
+            }
+        }
+    }
+
+    .footer-social{
+        text-align: center;
+        padding: 2rem 1rem;
+
+        ul{
+            display: flex;
+            justify-content: center;
+
+            li{
+                margin-left: 4rem;
+
+                a{
+                    display: block;
+                    color: $primary-color;
+
+                    i{
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .header{
+
+        .nav{
+            display: flex;
+            justify-content: unset;
+            padding: 2rem 2rem;
+
+            .hamburgur{
+                display: none;
+            }
+
+            .menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: unset;
+                background-color: unset;
+                width: unset;
+                height: unset;
+                border: unset;
+                margin-right: 1rem;
+                
+                li{
+                    border: unset;
+                    margin-left: 1.5rem;
+
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        
+            
+        }
+
+        
+        
+    }
+    .hero-1{
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+
+        &__left{
+            order: 2;
+            flex-basis: 50%;
+
+            img{
+                object-fit: fill;
+            }
+            
+
+        }
+        &__right{
+            order: 1;
+            flex-basis: 50%;
+
+            .desktop{
+                display: block;
+
+                input[type='text']{
+                    padding: 1.5rem 2rem;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #eee;
+                    display: inline-block;
+                    margin-left: 2rem;
+                    transition: all .4s ease-out;
+                    text-align: right;
+                    color: $white-color;
+                    outline: 0;
+
+                }
+                .btn.send-link{
+                    padding: .7rem 2.5rem;
+                    display: inline-flex;
+                    color: $bg-primary-color;
+                }
+                .btn.intro-link{
+                    display: block;
+                    padding: 1rem 1rem;
+                    border: 1px solid #eee;
+                    margin-top: 3rem;
+                    transition: all .4s ease-in-out;
+                    
+                    a{
+                        color: $white-color;
+                    }
+                    &:hover{
+                        background-color: rgba($color: #ffff, $alpha: .1);
+
+                       
+                    }
+                }
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    }
+    .social-desktop{
+        display: unset;
+        margin: 2rem 0;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 4rem 0;
+
+            li{
+                margin: 0 1rem;
+                margin-right: 15px;
+                margin-bottom: 2rem;
+
+                a{
+                    display: block;
+                    width: 160px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    .snapp-apk{
+        
+            .container{
+                padding: 6rem 2rem;
+        
+                .title{
+                    margin-bottom: 5rem;
+                    font-size: 3rem;
+                }
+        
+                .snapp-list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    text-align: center;
+                    color: $primary-color;
+        
+        
+                    &__item{
+                        border-radius: $border-radius * 2;
+                        
+                        a{
+                            img{
+                                width: 60px;
+                                height: 60px;
+                                object-fit: cover;
+                            }
+                            h3{
+                                font-size: 1.4rem;
+                                margin-top: .5rem;
+                            }
+                        }
+        
+                    }
+                }
+            }
+        }
+    .order-food{
+
+        &__slider{
+            padding: 0 0;
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 70%;
+                object-fit: fill;
+                border-radius: $border-radius;
+
+            }
+        }
+        &__super-apk{
+
+            .super-apk__left{
+                padding: 1rem 6rem;
+            }
+        }
+        &__quick-way{
+    
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                li{
+                    margin-left: 4px;
+                    overflow: hidden;
+                    padding: 1rem 2rem;
+                    border: 1px solid #eee;
+                 
+                    .image{
+                        border-radius: $border-radius;
+                    }
+                    .detail{
+                        padding: 1rem 1rem;
+    
+                        h3{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sign-driver{
+        padding: 3rem 6rem;
+
+        h2{
+            font-size: 2.6rem;
+        }
+        p{
+            font-size: 1.9rem;
+            text-align: center;
+        }
+
+        span{
+    
+            a.btn{
+                width: 30%;
+            }
+        }
+        &__detail{
+            margin: 5rem 0;
+    
+            ul{
+    
+                li{
+                    padding: 2.5rem 2rem;
+                    .detail{
+    
+                        
+                        p{
+                            font-size: 1.4rem;
+                            text-align: center;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .hero-1{
+
+        &__right{
+        background-color: $bg-primary-color;
+        padding: 2rem 3rem;
+
+        & .btn{
+            margin-top: 0;
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            margin: 2rem 5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+            .desktop{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 2rem 3rem;
+                
+
+                input[type='text']{
+                    padding: 0 3rem;
+                    cursor: pointer;
+                    
+
+                }
+                .btn.send-link{
+                    padding: 1rem 4.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .btn.intro-link{
+                    display: block;
+                    width: 100%;
+                    padding: 2rem 1rem;
+                    margin-top: 4rem;
+                    
+                }
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    }
+    .order-food{
+
+        
+        &__super-apk{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .super-apk__right{
+                height: 400px;
+                flex-basis: 50%;
+                padding: 0 0;
+            }
+            .super-apk__left{
+                flex-basis: 50%;
+
+                p{
+                    max-width: 600px;
+                    text-align: justify;
+                }
+            }
+        }
+        &__quick-way{
+    
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                li{
+                    margin-left: 4px;
+                    overflow: hidden;
+                    padding: 1rem 2rem;
+                    border: 1px solid #eee;
+                 
+                    .image{
+                        border-radius: $border-radius;
+                    }
+                    .detail{
+                        padding: 1rem 1rem;
+    
+                        h3{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sign-driver{
+        background-color: $body-color;
+        padding: 3rem 2rem;
+    
+        h2{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    
+        span{
+    
+            a.btn{
+                margin: 6rem 0;
+            }
+        }
+    
+        video{
+            width: 100%;
+            height: auto;
+            border-radius: $border-radius * 2;
+        }
+        &__detail{
+    
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+    
+                li{
+                    display: flex;
+                    align-items: center;
+                    flex-basis: 49%;
+                    padding: 4rem 2rem;
+    
+                    .icon{
+                        text-align: center;
+    
+                        img{
+                            width: 80px;
+                            height: 40px;
+                            object-fit: cover;
+                        }
+                    }
+                    .detail{
+                        max-width: 80%;
+                        margin-right: 1rem;
+    
+                        h2{
+                            font-size: 1.6rem;
+                            text-align: right;
+                        }
+                        p{
+                            text-align: justify;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    
+        
+    }
+
+    footer{
+        
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+        }
+
+
+        .footer-menu{
+            
+            ul{
+                display: flex;
+                flex-wrap: unset;
+                align-items: center;
+                justify-content: space-between;
+    
+                li{
+                    margin: 0;
+                    border-bottom: 0;
+
+                    &:hover{
+                        font-weight: 700;
+                    }
+    
+                    a{
+                        padding: .5rem .5rem;
+                        margin-left: .5rem;
+                    }
+                }
+            }
+        }
+        .footer-social{
+    
+            ul{
+                display: flex;
+                justify-content: center;
+    
+                li{
+                    margin-left: 2rem;
+
+                    &:hover a{
+                        color: blue;
+                    }
+                    a{
+                        
+                    transition: all .4s ease-in-out;
+                    }
+    
+                }
+            }
+        }
+    }
+
+}
